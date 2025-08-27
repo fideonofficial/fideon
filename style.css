@@ -243,6 +243,22 @@ a {
     border-radius: 5px;
 }
 
+.about h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #d4af37; /* The normal color is yellow */
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly transparent black */
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Updated CSS for the paragraph to match the h3 background */
 .about p {
     max-width: 900px;
     margin: 30px auto 0;
@@ -251,13 +267,17 @@ a {
     line-height: 1.7;
     color: #e0e0e0;
     transition: color 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly transparent black */
     padding: 15px;
     border-radius: 5px;
 }
 
-.about p:hover {
-    color: #d4af37;
+/* Hover Effect for the entire content block */
+.about-content:hover h3 {
+    color: #fff; /* H3 becomes white on hover */
+}
+.about-content:hover p {
+    color: #d4af37; /* P becomes yellow on hover */
 }
 
 .video-container {
